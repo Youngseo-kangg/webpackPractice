@@ -1,0 +1,23 @@
+{
+  "name": "webpackpractice",
+  "version": "1.0.0",
+  "description": "생활코딩의 Webpack 강의를 듣고 공부한 내용입니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youngseo-kangg/webpackPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Youngseo-kangg/webpackPractice/issues"
+  },
+  "homepage": "https://github.com/Youngseo-kangg/webpackPractice#readme",
+  "devDependencies": {
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
