@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./source/about.js":
+/*!*************************!*\
+  !*** ./source/about.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.js */ \"./source/hello.js\");\n/* harmony import */ var _world_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world.js */ \"./source/world.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./source/style.css\");\n\n\n // css도 번들링 대상이라 source 내부로 옮김\n\ndocument.querySelector('#root').innerHTML = _world_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"] + ' ' + _hello_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nconsole.log('css: ', _style_css__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\n\n//# sourceURL=webpack://webpackpractice/./source/about.js?");
+
+/***/ }),
+
 /***/ "./source/hello.js":
 /*!*************************!*\
   !*** ./source/hello.js ***!
@@ -117,16 +127,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar word = 'hello';\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (word); // 모듈로 만들어 export하면서 word변수를 index.html에 import해와 사용 할 수 있게 됨\n\n\n//# sourceURL=webpack://webpackpractice/./source/hello.js?");
-
-/***/ }),
-
-/***/ "./source/index.js":
-/*!*************************!*\
-  !*** ./source/index.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.js */ \"./source/hello.js\");\n/* harmony import */ var _world_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world.js */ \"./source/world.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./source/style.css\");\n\n\n // css도 번들링 대상이라 source 내부로 옮김\n\ndocument.querySelector('#root').innerHTML = _hello_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"] + ' ' + _world_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\nconsole.log('css: ', _style_css__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\n\n//# sourceURL=webpack://webpackpractice/./source/index.js?");
 
 /***/ }),
 
@@ -212,7 +212,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./source/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./source/about.js");
 /******/ 	
 /******/ })()
 ;
