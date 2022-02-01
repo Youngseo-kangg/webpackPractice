@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   // * 어떤 작업을 할지 지정하는 mode ... development(기본값), production, none 선택 가능
@@ -31,4 +32,14 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      // * 템플릿으로 삼을 파일을 알려주는 template
+      template: './source/index.html',
+      // * 어떤 js파일을 가져와 사용할 것인지 알려주는 chunks
+      chunks: ['index'],
+      // * 생성할 파일 이름을 알려주는 filename
+      filename: './index.html',
+    }),
+  ],
 };
